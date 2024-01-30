@@ -1,10 +1,6 @@
 import { IoIosArrowDown } from "react-icons/io";
 
 export const InputSelect = () => {
-
-
-
-
   return (
     <>
       <span className="relative right-[-11rem]">

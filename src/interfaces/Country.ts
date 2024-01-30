@@ -9,7 +9,7 @@ export interface Country {
     flag:         string;  
     population:   number; 
     flags:        Flags;
-    borders:      string[];
+    borders?:      string[];
     tld:          string[];
 }
 
