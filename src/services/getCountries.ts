@@ -48,15 +48,6 @@ export const getCountries = async (): Promise<Country[]> => {
 
       const country: Country[] = data.map((country: Country) => ({
         name: country.name,
-        population: country.population,
-        flag: country.flags.svg,
-        region: country.region,
-        subregion: country.subregion,
-        capital: country.capital,
-        currencies: country.currencies,
-        borders: country.borders,
-        tld: country.tld,
-        languages: country.languages,
       }));
 
       return country

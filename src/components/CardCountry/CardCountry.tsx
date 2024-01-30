@@ -6,6 +6,7 @@ interface Props {
     flag: string;
     region: string;
     capital: string[];
+
 }
 
 export const CardCountry = ({name, population, flag, region, capital}: Props) => {
@@ -13,7 +14,7 @@ export const CardCountry = ({name, population, flag, region, capital}: Props) =>
   const formattedPopulation = new Intl.NumberFormat('en-US').format(population)
 
   return (
-    <div className="bg-components relative flex flex-col rounded-md shadow-md w-64 min-h-[335px]">
+    <div className="bg-components relative flex flex-col rounded-md shadow-md w-[280px] min-h-[335px]">
         <div className="relative flex justify-center min-h-40">
           <Image
             src={flag}

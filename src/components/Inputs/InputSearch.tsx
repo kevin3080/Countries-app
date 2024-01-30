@@ -2,9 +2,13 @@
 import { useRef } from "react";
 import { MdSearch } from "react-icons/md";
 
-export const InputSearch = () => {
-  const inputRef = useRef<HTMLInputElement>(null);
+interface props {
+  searcher: ( e: React.ChangeEvent<HTMLInputElement>) => void
+  search: string
+  }
+export const InputSearch = ({searcher, search}: props) => {
 
+  const inputRef = useRef<HTMLInputElement>(null);
   const handleClick = () => {
     inputRef.current && inputRef.current.focus();
   };
@@ -20,6 +24,8 @@ export const InputSearch = () => {
         onClick={handleClick}
         className="p-4 pl-[75px] bg-components shadow-lg w-[420px] placeholder:text-textColor rounded-lg placeholder:font-light font-light"
         placeholder="Search for a country..."
+        value={search}
+        onChange={searcher}
       />
     </>
   );

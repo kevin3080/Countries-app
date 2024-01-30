@@ -59,7 +59,7 @@ async function pageCountryName({ params }: { params: { name: string } }) {
         <span className="">Back</span>
       </Link>
 
-      <div className="mt-12 flex mr-20">
+      <div className=" mt-12 flex flex-col lg:flex-row mr-20">
         <div className="relative ml-[-20px] w-[560px] h-[400px] border-[20px] rounded-xl  border-[#1F2C35] ">
             <Image
               src={flag}
@@ -68,7 +68,7 @@ async function pageCountryName({ params }: { params: { name: string } }) {
               className="object-cover" 
             />
         </div>
-        <div className="absolute w-1/2 right-4">
+        <div className=" lg:relative w-1/2 pl-16 pt-16">
             <h2 className="text-3xl font-semibold">{name.common}</h2>
             <div className="flex flex-col flex-wrap h-36 w-[60%] gap-2 gap-x-20 mt-6">
               <p className="text-sm font-semibold">Native name: <span className="font-light">{common || name.common}</span></p>
