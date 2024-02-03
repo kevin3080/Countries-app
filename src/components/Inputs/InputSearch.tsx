@@ -22,7 +22,7 @@ export const InputSearch = ({searcher, search}: props) => {
         type="search"
         ref={inputRef}
         onClick={handleClick}
-        className="p-4 pl-[75px] bg-components shadow-lg w-[420px] placeholder:text-textColor rounded-lg placeholder:font-light font-light"
+        className="p-4 pl-[75px] bg-components shadow-lg min-w-[100px] sm:w-[420px] placeholder:text-textColor rounded-lg placeholder:font-light font-light"
         placeholder="Search for a country..."
         value={search}
         onChange={searcher}
