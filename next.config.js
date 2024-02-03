@@ -6,6 +6,10 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'www.flagcdn.com',
             },
+            {
+                protocol: 'https',
+                hostname: 'flagcdn.com',
+            },
         ],
     }
 }

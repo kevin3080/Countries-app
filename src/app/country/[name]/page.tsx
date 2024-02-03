@@ -50,17 +50,17 @@ async function pageCountryName({ params }: { params: { name: string } }) {
 
 
   return (
-    <main className="mt-16 ml-20">
+    <main className="mt-8 sm:mt-16 sm:ml-20">
       <Link
         href="/"
-        className=" pt-2 pb-2 bg-components shadow-lg rounded-md flex w-28 items-center justify-center gap-2 font-light"
+        className="ml-8 pt-2 sm:ml-0 pb-2 bg-components shadow-lg rounded-md flex w-28 items-center justify-center gap-2 font-light"
       >
         <FaArrowLeftLong size={15} />
         <span className="">Back</span>
       </Link>
 
-      <div className=" mt-12 flex flex-col lg:flex-row mr-20">
-        <div className="relative ml-[-20px] w-[560px] h-[400px] border-[20px] rounded-xl  border-[#1F2C35] ">
+      <div className="sm:mt-12 flex flex-col items-center justify-center sm:justify-normal sm: sm:items-start lg:flex-row sm:mr-20">
+        <div className="relative sm:ml-[-20px] w-[350px] h-[250px] sm:w-[560px] sm:h-[400px] border-[20px] rounded-xl  border-[#1F2C35] ">
             <Image
               src={flag}
               alt="profile-picture" 
@@ -68,9 +68,9 @@ async function pageCountryName({ params }: { params: { name: string } }) {
               className="object-cover" 
             />
         </div>
-        <div className=" lg:relative w-1/2 pl-16 pt-16">
+        <div className=" lg:relative w-1/2 pl-10 sm:pl-16 sm:pt-16">
             <h2 className="text-3xl font-semibold">{name.common}</h2>
-            <div className="flex flex-col flex-wrap h-36 w-[60%] gap-2 gap-x-20 mt-6">
+            <div className="flex flex-col sm:flex-wrap sm:h-36 sm:w-[60%] gap-2 sm:gap-x-20 mt-6">
               <p className="text-sm font-semibold">Native name: <span className="font-light">{common || name.common}</span></p>
               <p className="text-sm font-semibold">Population: <span className="font-light">{formattedPopulation}</span></p>
               <p className="text-sm font-semibold">Region: <span className="font-light">{region}</span></p>
@@ -82,9 +82,9 @@ async function pageCountryName({ params }: { params: { name: string } }) {
             </div>
             <div className="flex items-center mt-12">
               <h3 className="mr-6">Border Countries:</h3>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-col sm:flex-row flex-wrap">
                 {bordersName?.map((b) => {
-                  return <p className="text-sm font-light bg-components shadow-lg rounded-md px-7 py-1" key={b}><Link href={`/country/${b}`}>{b}</Link></p>;
+                  return <p className="m-1 text-sm font-light bg-components shadow-lg rounded-md px-7 py-1 text-center" key={b}><Link href={`/country/${b}`}>{b}</Link></p>;
                 })}
               </div>
             </div>
