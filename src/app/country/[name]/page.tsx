@@ -59,8 +59,8 @@ async function pageCountryName({ params }: { params: { name: string } }) {
         <span className="">Back</span>
       </Link>
 
-      <div className="sm:mt-12 flex flex-col items-center justify-center sm:justify-normal sm: sm:items-start lg:flex-row sm:mr-20">
-        <div className="relative sm:ml-[-20px] w-[350px] h-[250px] sm:w-[560px] sm:h-[400px] border-[20px] rounded-xl  border-[#1F2C35] ">
+      <div className="mt-3 sm:mt-12 flex flex-col items-center justify-center sm:justify-normal sm: sm:items-start lg:flex-row sm:mr-20">
+        <div className="relative sm:ml-[-20px] w-[350px] h-[250px] sm:w-[560px] sm:h-[400px] border-[20px] rounded-xl  border-borColor ">
             <Image
               src={flag}
               alt="profile-picture" 

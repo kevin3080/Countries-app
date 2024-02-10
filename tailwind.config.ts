@@ -10,6 +10,7 @@ const config: Config = {
     colors: {
       components: 'hsl(var(--elements-hsl))',
       textColor: 'hsl(var(--text-hsl))',
+      borColor: 'hsl(var(--border-country))',
     },
     fontFamily: {
       sans: ['Nunito Sans', 'sans-serif'],
